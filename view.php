@@ -61,7 +61,24 @@ include("viewConf.php");
                             </tr>
                         </thead>
                         <tbody>
-                            <?php if( is_array($fetchData) ){ $count= 1; foreach($fetchData as $data){?>
+                            <tr class="bg-white border-b ">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap items-center justify-center text-center">
+                                    <?php echo "1" ?>
+                                </th>
+                                <td class="px-6 py-4">
+                                    <?php echo "DumpPurposeOnly" ?>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <?php echo "Dumpdata@gmail.com" ?>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <?php echo "42" ?>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <?php echo "2023-08-01 10:07:21" ?>
+                                </td>
+                            </tr>
+                            <?php if( is_array($fetchData) ){ $count= 2; foreach($fetchData as $data){?>
                             <tr class="bg-white border-b ">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap items-center justify-center text-center">
                                     <?php echo $count ?>
