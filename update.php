@@ -67,7 +67,7 @@ include("updateConf.php");
                     <p class="text-2xl font-inter font-semibold">Update Email: </p>
                 </div>
                 <div class="container">
-                    <form class="flex flex-col gap-2" action="delConf.php"  method="POST">
+                    <form class="flex flex-col gap-2" action="updateConf.php"  method="POST">
                     <div class="mb-3 flex flex-col gap-2">
                         <label class="text-lg font-inter font-medium">Old Email :</label>
                         <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Email yang ingin diubah..." type="text"  id="Email" name="email"  autocomplete="off" />
