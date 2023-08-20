@@ -53,7 +53,7 @@ include("updateConf.php");
                       <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="username baru..." type="text"  id="Username" name="username"  autocomplete="off" />
                     </div>
                     <div class="my-3 flex flex-col gap-2">
-                        <button class="py-2 px-6 bg-danger rounded-xl shadow-xl justify-center text-kuro font-inter text-sm font-semibold w-24 duration-75 ease-in-out hover:-translate-y-1" type="submit" name="delete">
+                        <button class="py-2 px-6 bg-primary rounded-xl shadow-xl justify-center text-kuro font-inter text-sm font-semibold w-24 duration-75 ease-in-out hover:-translate-y-1" type="submit" name="delete">
                             UPDATE
                         </button>
                         <p style="display: none; color: #FF2709;" id="cek">Please fill the form</p>
@@ -77,7 +77,7 @@ include("updateConf.php");
                         <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Email baru..." type="text"  id="Email" name="email"  autocomplete="off" />
                     </div>
                     <div class="my-3 flex flex-col gap-2">
-                        <button class="py-2 px-6 bg-danger rounded-xl justify-center shadow-xl text-kuro font-inter text-sm font-semibold w-24 duration-75 ease-in-out hover:-translate-y-1" type="submit" name="delete">
+                        <button class="py-2 px-6 bg-primary rounded-xl justify-center shadow-xl text-kuro font-inter text-sm font-semibold w-24 duration-75 ease-in-out hover:-translate-y-1" type="submit" name="delete">
                             UPDATE 
                         </button>
                         <p style="display: none; color: #FF2709;" id="cek">Please fill the form</p>
