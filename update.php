@@ -105,10 +105,6 @@ include("updateUserConf.php");
         if (window.location.href.indexOf("emailnoexist") > -1) {
             d.style.display = "block";
         }
-        if (window.location.href.indexOf("empty") > -1) {
-            a.style.display = "block";
-            b.style.display = "block";
-        }
 
     </script>
 </body>
