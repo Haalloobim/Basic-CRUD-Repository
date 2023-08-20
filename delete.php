@@ -43,46 +43,48 @@ include("delConf.php")
                 </div>
                 <div class="container">
                     <form class="flex flex-col gap-2" action="delConf.php"  method="POST">
-                    <div class="mb-3  flex flex-col gap-2">
-                      <label class="text-lg font-inter font-medium">Username :</label>
-                      <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Masukkan Nama.." type="text"  id="Username" name="username"  autocomplete="off" />
-                    </div>
-                    <div class="mb-3 flex flex-col gap-2">
-                        <label class="text-lg font-inter font-medium">Email :</label>
-                        <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Masukkan Email.." type="text"  id="Email" name="email"  autocomplete="off" />
-                    </div>
-                    <div class="my-3 flex flex-col gap-2">
-                        <button class="py-2 px-6 bg-danger rounded-xl shadow-xl text-kuro font-inter text-sm font-semibold w-24 duration-75 ease-in-out hover:-translate-y-1" type="submit" name="delete">
-                            DELETE
-                        </button>
-                        <p style="display: none; color: #FF2709;" id="cek">Please fill the form</p>
-                        <p style="display: none; color: #FF2709;" id="cek2">Please choose one option</p>
-                        <p style="display: none; color: #FF2709;" id="cek3">User does not exist</p>
-                        <p style="display: none; color: #FF2709;" id="cek4">Email does not exist</p>
-                    </div>
+                        <div class="mb-3  flex flex-col gap-2">
+                        <label class="text-lg font-inter font-medium">Username :</label>
+                        <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Masukkan Nama.." type="text"  id="Username" name="username"  autocomplete="off" />
+                        </div>
+                        <div class="mb-3 flex flex-col gap-2">
+                            <label class="text-lg font-inter font-medium">Email :</label>
+                            <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Masukkan Email.." type="text"  id="Email" name="email"  autocomplete="off" />
+                        </div>
+                        <div class="my-3 flex flex-col gap-4">
+                            <div class="flex flex-row gap-2">
+                                <button class="py-2 px-6 bg-danger rounded-xl shadow-xl text-kuro font-inter text-sm font-semibold w-24 duration-75 ease-in-out hover:-translate-y-1" type="submit" name="delete">
+                                    DELETE
+                                </button>
+                                <div class="py-2 px-6 bg-red-200 rounded-xl shadow-lg text-kuro font-inter text-sm font-semibold cursor-pointer transition-all ease-in-out duration-100 hover:-translate-y-1" onclick="window.location.href='input.php'">
+                                    <p>BACK</p>
+                                </div>
+                            </div>
+                            <p style="display: none; color: #FF2709;" id="cek">Please fill the form</p>
+                            <p style="display: none; color: #FF2709;" id="cek2">Please choose one option</p>
+                            <p style="display: none; color: #FF2709;" id="cek3">User does not exist</p>
+                            <p style="display: none; color: #FF2709;" id="cek4">Email does not exist</p>
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="">
-                <a href="input.php">balik</a>
-            </div>
         </div>
     </div>
-
+    
     <script>
-      var a = document.getElementById("cek");
+      let a = document.getElementById("cek");
+      let b = document.getElementById("cek2");
+      let c = document.getElementById("cek3");
+      let d = document.getElementById("cek4");
       if (window.location.href.indexOf("gakada") > -1) {
         a.style.display = "block";
       }
-      var b = document.getElementById("cek2");
       if (window.location.href.indexOf("fullbang") > -1) {
         b.style.display = "block";
       }
-      var c = document.getElementById("cek3");
       if (window.location.href.indexOf("usernoexist") > -1) {
         c.style.display = "block";
       }
-      var d = document.getElementById("cek4");
       if (window.location.href.indexOf("emailnoexist") > -1) {
         d.style.display = "block";
       }

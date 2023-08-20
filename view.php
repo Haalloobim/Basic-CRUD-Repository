@@ -85,8 +85,8 @@ include("viewConf.php");
                     </table>
                 </div>
             </div>
-            <div class="py-2 px-6 rounded-xl shadow-xl font-inter font-normal text-lg mt-3 cursor-pointer bg-warning text-kuro transition-all ease-in-out duration-100 hover:-translate-y-1" onclick="window.location.href='input.php'">
-                <p>back</p>
+            <div class="py-2 px-6 bg-warning mt-4 rounded-xl shadow-lg text-kuro font-inter text-sm font-semibold cursor-pointer transition-all ease-in-out duration-100 hover:-translate-y-1" onclick="window.location.href='input.php'">
+                <p>BACK</p>
             </div>
         </div>
     </div>

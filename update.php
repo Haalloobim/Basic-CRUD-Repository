@@ -37,7 +37,7 @@ include("updateUserConf.php");
 </head>
 <body>
     <div class="h-screen py-4 bg-slate-50">
-        <div class="container p-6 px-8 m-auto flex lg:flex-row flex-col gap-12 justify-center items-center h-full">
+        <div class="container p-6 px-8 m-auto flex lg:flex-row flex-col gap-8 justify-center items-center h-full">
             <div class="my-auto p-6 rounded-lg shadow-lg bg-white flex flex-col gap-4">
                 <div>
                     <p class="text-2xl font-inter font-semibold">Update Username: </p>
@@ -61,6 +61,9 @@ include("updateUserConf.php");
                     </div>
                     </form>
                 </div>
+            </div>
+            <div class="py-2 px-6 bg-green-300 rounded-xl shadow-lg text-kuro font-inter text-sm font-semibold cursor-pointer transition-all ease-in-out duration-100 hover:-translate-y-1" onclick="window.location.href='input.php'">
+                <p>BACK</p>
             </div>
             <div class="my-auto p-6 rounded-lg shadow-lg bg-white flex flex-col gap-4">
                 <div>

@@ -57,10 +57,13 @@ include("createConf.php")
                       <label class="text-lg font-inter font-medium">Age :</label>
                       <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Masukkan Umur.." type="number"  id="Age" name="umur" required autocomplete="off" />
                     </div>
-                    <div class="my-3">
-                        <button class="py-2 px-6 bg-primary rounded-xl shadow-xl text-kuro font-inter text-sm font-semibold" type="submit" name="create">
+                    <div class="my-3 flex flex-row gap-4">
+                        <button class="py-2 px-6 bg-primary rounded-xl shadow-lg text-kuro font-inter text-sm font-semibold transition-all ease-in-out duration-100 hover:-translate-y-1" type="submit" name="create">
                             SUBMIT
                         </button>
+                        <div class="py-2 px-6 bg-blue-200 rounded-xl shadow-lg text-kuro font-inter text-sm font-semibold cursor-pointer transition-all ease-in-out duration-100 hover:-translate-y-1" onclick="window.location.href='input.php'">
+                            <p>BACK</p>
+                        </div>
                     </div>
                     </form>
                 </div>
