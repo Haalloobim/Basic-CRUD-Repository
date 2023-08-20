@@ -41,7 +41,7 @@ include("viewConf.php");
             <div id="table" class=" bg-white p-4 m-4 rounded-2xl shadow-xl">
                 <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left text-gray-500 ">
-                        <thead class="text-sm text-gray-700 uppercase bg-blue-200 text-center ">
+                        <thead class="text-sm text-gray-700 uppercase bg-warning text-center ">
                             <tr>
                                 <th scope="col" class="px-6 py-3">
                                     No
@@ -85,8 +85,8 @@ include("viewConf.php");
                     </table>
                 </div>
             </div>
-            <div class="">
-                <a href="input.php">balik</a>
+            <div class="py-2 px-6 rounded-xl shadow-xl font-inter font-normal text-lg mt-3 cursor-pointer bg-warning text-kuro transition-all ease-in-out duration-100 hover:-translate-y-1" onclick="window.location.href='input.php'">
+                <p>back</p>
             </div>
         </div>
     </div>

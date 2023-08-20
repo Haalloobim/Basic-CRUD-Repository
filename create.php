@@ -58,7 +58,7 @@ include("createConf.php")
                       <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Masukkan Umur.." type="number"  id="Age" name="umur" required autocomplete="off" />
                     </div>
                     <div class="my-3">
-                        <button class="py-2 px-6 bg-success rounded-xl shadow-xl text-kuro font-inter text-sm font-semibold" type="submit" name="create">
+                        <button class="py-2 px-6 bg-primary rounded-xl shadow-xl text-kuro font-inter text-sm font-semibold" type="submit" name="create">
                             SUBMIT
                         </button>
                     </div>

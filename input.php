@@ -44,7 +44,7 @@
             </div>
             <div class="grid grid-cols-2 gap-4">
                 <a href="create.php">
-                    <div class="container min-h-fit bg-white rounded-xl shadow-xl items-center justify-center text-center p-6 w-60 border-t-2 border-danger transition-all ease-in-out duration-100 hover:-translate-y-1">
+                    <div class="container min-h-fit bg-white rounded-xl shadow-xl items-center justify-center text-center p-6 w-60 border-t-2 border-primary transition-all ease-in-out duration-100 hover:-translate-y-1">
                         <p class="text-lg font-semibold ">CREATE DATA</p>
                     </div>
                 </a>
@@ -59,7 +59,7 @@
                     </div>
                 </a>
                 <a href="delete.php">
-                    <div class="container min-h-fit bg-white rounded-xl shadow-xl items-center justify-center text-center p-6 w-60 border-t-2 border-primary transition-all ease-in-out duration-100 hover:-translate-y-1">
+                    <div class="container min-h-fit bg-white rounded-xl shadow-xl items-center justify-center text-center p-6 w-60 border-t-2 border-danger transition-all ease-in-out duration-100 hover:-translate-y-1">
                         <p class="text-lg font-semibold ">DELETE DATA</p>
                     </div>
                 </a>
