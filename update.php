@@ -1,0 +1,92 @@
+<?php
+include("updateConf.php");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        danger: '#EA3D76',
+                        warning: '#F6E069',
+                        success: '#33D685',
+                        primary: '#61ADDB',
+                        kuro: '#212121',
+                    },
+                    fontFamily: {
+                        inter: ['Inter'],
+                        roboto: ['roboto'],
+                        noto: ['Noto Serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Update Data</title>
+</head>
+<body>
+    <div class="h-screen py-4 bg-slate-50">
+        <div class="container p-6 px-8 m-auto flex lg:flex-row flex-col gap-12 justify-center items-center h-full">
+            <div class="my-auto p-6 rounded-lg shadow-lg bg-white flex flex-col gap-4">
+                <div>
+                    <p class="text-2xl font-inter font-semibold">Update User By: </p>
+                </div>
+                <div class="container">
+                    <form class="flex flex-col gap-2" action="updateConf.php"  method="POST">
+                    <div class="mb-3  flex flex-col gap-2">
+                      <label class="text-lg font-inter font-medium">Old Username :</label>
+                      <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Masukkan Nama.." type="text"  id="Username" name="username"  autocomplete="off" />
+                    </div>
+                    <div class="mb-3  flex flex-col gap-2">
+                      <label class="text-lg font-inter font-medium">New Username :</label>
+                      <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Masukkan Nama.." type="text"  id="Username" name="username"  autocomplete="off" />
+                    </div>
+                    <div class="my-3 flex flex-col gap-2">
+                        <button class="py-2 px-6 bg-danger rounded-xl shadow-xl text-kuro font-inter text-sm font-semibold w-24 duration-75 ease-in-out hover:-translate-y-1" type="submit" name="delete">
+                            UPDATE
+                        </button>
+                        <p style="display: none; color: #FF2709;" id="cek">Please fill the form</p>
+                        <p style="display: none; color: #FF2709;" id="cek3">User does not exist</p>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="my-auto p-6 rounded-lg shadow-lg bg-white flex flex-col gap-4">
+                <div>
+                    <p class="text-2xl font-inter font-semibold">Update User By: </p>
+                </div>
+                <div class="container">
+                    <form class="flex flex-col gap-2" action="delConf.php"  method="POST">
+                    <div class="mb-3 flex flex-col gap-2">
+                        <label class="text-lg font-inter font-medium">Email :</label>
+                        <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Masukkan Email.." type="text"  id="Email" name="email"  autocomplete="off" />
+                    </div>
+                    <div class="mb-3 flex flex-col gap-2">
+                        <label class="text-lg font-inter font-medium">Email :</label>
+                        <input class="border-2 border-[#9AA2B1] rounded-md w-64 py-1 px-3 placeholder:text-[#9AA2B1]" placeholder="Masukkan Email.." type="text"  id="Email" name="email"  autocomplete="off" />
+                    </div>
+                    <div class="my-3 flex flex-col gap-2">
+                        <button class="py-2 px-6 bg-danger rounded-xl shadow-xl text-kuro font-inter text-sm font-semibold w-24 duration-75 ease-in-out hover:-translate-y-1" type="submit" name="delete">
+                            DELETE
+                        </button>
+                        <p style="display: none; color: #FF2709;" id="cek">Please fill the form</p>
+                        <p style="display: none; color: #FF2709;" id="cek4">Email does not exist</p>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
